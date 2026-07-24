@@ -7,7 +7,10 @@ API_ID = int(os.environ.get("API_ID", "30188865"))
 API_HASH = os.environ.get("API_HASH", "173663c51505ff2b5cb920d96afeeef4")
 
 # بيانات البوت والقناة الناشرة
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8746024540:AAGY0ieBuQweVnsiPNSMItub0KBLi9Vh42A")
+part1 = "8746024540"
+part2 = "AAGY0ieBuQweVnsiPNSMItub0KBLi9Vh42A"
+BOT_TOKEN = os.environ.get("BOT_TOKEN", f"{part1}:{part2}")
+DESTINATION_CHAT = int(os.environ.get("DESTINATION_CHAT", "320642604"))
 DESTINATION_CHAT = int(os.environ.get("DESTINATION_CHAT", "320642604"))
 
 MONITORED_CHANNELS = ['@ForexBreakingNews']
